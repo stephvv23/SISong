@@ -32,6 +32,8 @@ class ControllerAlbum implements ActionListener, MouseListener {
         this.artistArray = artistArray;
         guiAlbums.setDataTableSongRegistered(this.songArray.getMatrixDataSongs(), Song.TBL_LABELS);
         guiAlbums.setDataTableArtistRegistered(this.artistArray.getMatrixArtist(), Artist.TB_LABELS);
+        guiAlbums.setDataTableSongToAlbum(new String[0][0], Song.TBL_LABELS);
+        guiAlbums.setDataTableArtistToAlbum(new String[0][0], Artist.TB_LABELS);
         guiAlbums.listenMouse(this);
         this.guiAlbums.setVisible(true);
 
